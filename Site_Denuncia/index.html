@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header class="header" id="main-header">
+            <div class="container">
+                <div class="row main-row">
+                    <div class="logo col-md-4">
+                        <p><a href="index.html">Canal de Ética</a></p>
+                    </div>
+                    <div class="col-md-8 menu-central">
+                        <nav>
+                            <!-- Menu desktop -->
+                            <ul class="desktop-menu menu">
+                                <li><a href="">Conheça a contato seguro</a></li>
+                                <li><a href="">Sobre</a></li>
+                                <li><a href="">Como funciona</a></li>
+                                <li><a href="">Proteção de dados</a></li>
+                            </ul>
+        
+                            <!-- Ícone hamburger e menu mobile -->
+                            <div class="hamburger-container">
+                                <div class="hamburger" id="hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <ul class="mobile-menu menu" id="mobile-menu">
+                                    <li><a href="">Conheça a contato seguro</a></li>
+                                    <li><a href="">Sobre</a></li>
+                                    <li><a href="">Como funciona</a></li>
+                                    <li><a href="">Proteção de dados</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Colocar imagem de cabeçalho -->
+        <section class="introducao">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Introdução da página com imagem</h2>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Criação de protocolo -->
+        <section> 
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-12">
+                        <div class="criar-protocolo">
+                            <a href="denuncia.html">
+                                <button class="btn btn-outline-info bt-faca-denuncia">Faça sua denúncia</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="pesquisa-protocolo">
+                            <input type="text" name="protocolo-digitado" class="form-control protocolo-digitado" placeholder="Digite aqui o protocolo do seu relato" id="protocolo-digitado">
+                            <button class="btn btn-outline-info consulta-protocolo">Consultar Resposta</button>
+                        </div>
+                        <hr><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="sobre">
+                <h3 class="titulo-sobre">Sobre o canal</h3>
+                <p>O Canal de Ética é uma forma de ampliar nosso comprometimento com a transparência e a ética. Essa ferramenta independente, sigilosa e imparcial está disponível para os públicos externo e interno do Grupo Plasdil.<br><br>
+                    Você está em um ambiente seguro e sigiloso, hospedado fora do Sistema (ou ambiente) Grupo Plasdil, e administrado pelo Grupo Plasdil.
+                </p>
+            </div>
+        </section>
+
+        <section class="como-funciona">
+            <h3 class="titulo-etica">Como funciona o canal de Ética</h3>
+            <p>Os registros de denúncias, sugestões e dúvidas podem ser realizados por meio de ligação telefônica (0800), de site ou de aplicativo. 
+                Os nossos ouvidores estão à disposição 24 horas por dia, 7 dias por semana, 365 dias por ano. 
+                As ligações são sempre gratuitas, de qualquer lugar do país. Não é necessário se identificar, sendo garantido o anonimato.
+            </p>
+            <p class="p-4 bg-light text-muted shadow-sm alerta-importante">
+                <small><strong>Fique tranquilo</strong>: não compartilhamos o IP dos computadores, nem rastreamos os telefones de origem das ligações realizadas. 
+                    Somos uma empresa independente e, por essa razão, garantimos o sigilo e a confidencialidade das denúncias que recebemos.
+                </small>
+            </p>
+        </section>
+
+
+        <footer class="rodape">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-md-6">
+                        <p>Divinopolis | MG | Brasil
+                            <br>
+                            R. Capitolio, 177 -  Vila Santo Antonio
+                            <br>
+                            CEP: 35502-039
+                            <br>
+                            (37) 2101-6655
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="redes-sociais">
+                            <a href="#" class="icon-linkedin"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="icon-instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="icon-facebook"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="direitos">© Copyright 2008-2023 - Todos os direitos reservados pelo Grupo Plasdil | <a href="">Grupo Plasdil</a></p>
+            </div>
+        </footer>
+
+        <script src="consulta-script.js"></script>
+    </body>
+</html>

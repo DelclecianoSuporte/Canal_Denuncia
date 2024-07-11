@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+         <!-- Não precisa de header nessa pagina , depois irei desacoplar os scripts pra cada pagina e irei retirar esse header daqui -->
+        <header style="display: none;"  class="header" id="main-header">
+            <div class="container">
+                <div class="row main-row">
+                    <div class="logo col-md-4">
+                        <p><a href="index.html">Canal de Ética</a></p>
+                    </div>
+                    <div class="col-md-8 menu-central">
+                        <nav>
+                            <!-- Menu desktop -->
+                            <ul class="desktop-menu menu">
+                                <li><a href="">Conheça a contato seguro</a></li>
+                                <li><a href="">Sobre</a></li>
+                                <li><a href="">Como funciona</a></li>
+                                <li><a href="">Proteção de dados</a></li>
+                            </ul>
+        
+                            <!-- Ícone hamburger e menu mobile -->
+                            <div class="hamburger-container">
+                                <div class="hamburger" id="hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <ul class="mobile-menu menu" id="mobile-menu">
+                                    <li><a href="">Conheça a contato seguro</a></li>
+                                    <li><a href="">Sobre</a></li>
+                                    <li><a href="">Como funciona</a></li>
+                                    <li><a href="">Proteção de dados</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Consulta de Protocolo</h2>
+                        <hr>
+                        <div>
+                            <p id="protocolo-status">Status do relato: </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div style="display: none;" class="row status-aberto">
+                    <div class="col-md-12">
+                        <p><strong>Manifestação da empresa</strong></p>
+                        <p>Grupo Plasdil</p>
+                        <br>
+                        <p>Obrigado pela sua participação, averiguaremos o registro e retornaremos em até 30 dias.</p>
+                        <br>
+                        <p>Informaremos caso seja necessário maior prazo para conclusão da análise.</p>
+                        <br>
+                        <p>Favor acompanhar o registro por intermédio do seu protocolo.</p>
+                    </div>
+                </div>
+
+                <div style="display: none;" class="row status-fechado">
+                    <div class="col-md-12">
+                        <p><strong>Manifestação da empresa</strong></p>
+                        <p id="data-hora-resposta">Data e Horario que foi finalizado a denuncia: </p>
+                        <br>
+                        <p id="resposta-status-fechado"></p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Vincular protocolo não farei por agora  -->
+        <!-- <section>
+            <div class="vincular-protocolo">
+                <button>
+                    Vincular Protocolos
+                </button>
+            </div>
+        </section> -->
+
+        <!-- Desabilitar o comentario abaixo caso for usar informações complementares -->
+        <!-- <section>
+           <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Informações complementares</h2>
+                        <p>Utilize o campo abaixo para complementar o seu relato, ou fazer questionamentos para a empresa</p>
+                        <textarea class="form-control" name="informacao-complementar" id="informacao-complementar" cols="30" rows="10"></textarea>
+                        <button id="enviar-complemento">Enviar resposta</button>
+                    </div>
+                </div>
+           </div> 
+        </section> -->
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-12"> 
+                    <a href="index.html">
+                        <button class="btn btn-outline-info">Voltar</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="consulta-script.js"></script>
+        
+    </body>
+</html>

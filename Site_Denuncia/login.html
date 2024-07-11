@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Votação || Plasdil</title>
+    <style type="text/css">
+        body {
+            background: linear-gradient(100deg, #003e67 10%, #cbebff 47%, #6fa8dc 100%);
+        }
+        div.global {
+            width: 15%;
+            height: auto;
+            background-color: #fff;
+            border: 1px solid #606060;
+            padding: 40px;
+            box-shadow: 0px 0px 60px #000;
+            margin-top: 10%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        input[type='text'], input[type='password'] {
+            width: 300px;
+            height: 25px;
+            border: solid 1px #606060;
+            border-radius: 5px;
+        }
+        input[type='password'] {
+            margin-left: 10px;
+        }
+        input[type='submit'] {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="global">
+    <form id="loginForm">
+        <label>Usuário: <input type="text" id="user" /></label><br /><br />
+        <label>Senha: <input type="password" id="pass" /></label><br /><br />
+        <input type="submit" value="Proximo Voto..." />
+    </form>
+</div>
+
+<div>
+    <a href="comite.html"></a>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita o envio padrão do formulário
+
+        var user = document.getElementById("user").value;
+        var pass = document.getElementById("pass").value;
+
+        // Defina aqui seus usuários e senhas
+        var users = {
+            'toolmmer': 'a1b24d',
+            'ti': 'glpi123**',
+            'wiany': '94269547'
+        };
+
+        if (user && pass) {
+            if (users[user] && users[user] === pass) {
+                alert('Login bem-sucedido!');
+                // Adicione aqui a lógica de redirecionamento ou ação após o login
+                window.location.href = 'comite.html';
+            } else {
+                alert('Usuário e/ou senha inválido(s). Tente novamente!');
+            }
+        } else {
+            alert('Por favor, preencha todos os campos!');
+        }
+    });
+});
+</script>
+
+</body>
+</html>

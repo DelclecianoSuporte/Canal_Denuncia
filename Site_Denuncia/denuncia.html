@@ -1,0 +1,547 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header" id="main-header">
+            <div class="container">
+                <div class="row main-row">
+                    <div class="logo col-md-4">
+                        <p><a href="index.html">Canal de Ética</a></p>
+                    </div>
+                    <div class="col-md-8 menu-central">
+                        <nav>
+                            <!-- Menu desktop -->
+                            <ul class="desktop-menu menu">
+                                <li><a href="">Conheça a contato seguro</a></li>
+                                <li><a href="">Sobre</a></li>
+                                <li><a href="">Como funciona</a></li>
+                                <li><a href="">Proteção de dados</a></li>
+                            </ul>
+        
+                            <!-- Ícone hamburger e menu mobile -->
+                            <div class="hamburger-container">
+                                <div class="hamburger" id="hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <ul class="mobile-menu menu" id="mobile-menu">
+                                    <li><a href="">Conheça a contato seguro</a></li>
+                                    <li><a href="">Sobre</a></li>
+                                    <li><a href="">Como funciona</a></li>
+                                    <li><a href="">Proteção de dados</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Relatar desvio de conduta</h2>
+                    <hr class="titulo-divisoria">
+                    <p>
+                        <strong>ATENÇÃO!</strong>
+                        O Canal de Ética NÃO deve ser utilizado para dúvidas, reclamações, sugestões ou críticas relacionados aos produtos e serviços fornecidos. 
+                        Nesses casos, você deve entrar em contato com o nosso Serviço de atendimento ao cliente pelo número (037) XXXX-XXXX, através do link  ou na Ouvidoria pelo link
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group form-control">
+                        <p><strong>Você gostaria de se identificar?</strong></p>
+                        <form>
+                            <label>
+                                <input type="radio" name="opcao" value="ident-sim"> Sim
+                            </label>
+                            <label>
+                                <input type="radio" name="opcao" value="ident-nao"> Não
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="formulario-denuncia-1" style="display: none;" class="row">
+                <div class="col-md-12">
+                    <form>
+                        <div class="form-group form-control">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" name="nome" class="form-control" placeholder="Informe seu nome">
+                        </div>
+
+                        <div class="form-group form-control">
+                            <label for="cpf">CPF</label>
+                            <input type="text" id="cpf" name="cpf" class="form-control" placeholder="Informe seu cpf">
+                        </div>
+
+                        <div class="form-group form-control">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Informe seu email">
+                        </div>
+
+                        <div class="form-group form-control">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="Informe seu telefone">
+                        </div>
+
+                        <div class="form-group form-control">
+                            <label for="celular">Celular</label>
+                            <input type="text" id="celular" name="celular" class="form-control" placeholder="Informe seu celular">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group form-control">
+                        <p><strong>Qual a sua relação com a Plasdil?</strong></p>
+                        <select class="form-control" name="opcao1" id="opcao1">
+                            <option value="">[selecione]</option>
+                            <option value="Sou colaborador">Sou colaborador</option>
+                            <option value="Sou ex-colaborador">Sou ex-colaborador</option>
+                            <option value="Sou fornecedor">Sou fornecedor</option>
+                            <option value="Sou parceiro">Sou parceiro</option>
+                            <option value="Sou prestador de serviço">Sou prestador de serviço</option>
+                            <option value="Sou beneficiário">Sou beneficiário</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+               
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group form-control">
+                        <p><strong>Qual o tipo de denúncia melhor se enquadra ao fato que você está registrando?</strong></p>
+                        <select class="form-control" name="opcao2" id="opcao2">
+                            <option value="">[selecione]</option>
+                            <option value="Assédio Sexual">Assédio Sexual</option>
+                            <option value="Assédio moral">Assédio moral</option>
+                            <option value="Assédio física">Assédio física</option>
+                            <option value="Discriminação">Discriminação</option>
+                            <option value="Comportamento inadequado">Comportamento inadequado</option>
+                            <option value="Não cumprimento de Políticas, Normas e Procedimentos">Não cumprimento de Políticas, Normas e Procedimentos</option>
+                            <option value="Conflito de interesses">Conflito de interesses</option>
+                            <option value="Violação de Leis Trabalhistas">Violação de Leis Trabalhistas</option>
+                            <option value="Violação de Leis Ambientais">Violação de Leis Ambientais</option>
+                            <option value="Favorecimento de fornecedores ou clientes">Favorecimento de fornecedores ou clientes</option>
+                            <option value="Fraude ou roubo de dinheiro">Fraude ou roubo de dinheiro</option>
+                            <option value="Irregularidades nas demonstrações financeiras ou relatórios de gestão">Irregularidades nas demonstrações financeiras ou relatórios de gestão</option>
+                            <option value="Roubo, furto ou desbio de mercadorias">Roubo, furto ou desbio de mercadorias</option>
+                            <option value="Destruição ou danos a bens da empresa">Destruição ou danos a bens da empresa</option>
+                            <option value="Corrupção">Corrupção</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group form-control">
+                        <p><strong>Indique o local onde ocorreu o fato que você está denunciando:</strong></p>
+                        <select class="form-control" name="opcao3" id="opcao3">
+                            <option value="">[selecione]</option>
+                            <option value="Plasdil">Plasdil</option>
+                            <option value="Plastico">Plastico</option>
+                            <option value="Transplapel">Transplapel</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group form-control">
+                        <p><strong>Indique a área/setor onde ocorreu o fato que você está denunciando:</strong></p>
+                        <input type="text" class="form-control" id="area-setor" name="area-setor">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group form-control">
+                        <p><strong>Como tomou conhecimento deste fato/transgressão?</strong></p>
+                        <select class="form-control" name="opcao4" id="opcao4">
+                            <option value="">[selecione]</option>
+                            <option value="Aconteceu comigo">Aconteceu comigo</option>
+                            <option value="Eu a observei">Eu a observei</option>
+                            <option value="Ouvi falar">Ouvi falar</option>
+                            <option value="Um colega de trabalho me contou">Um colega de trabalho me contou</option>
+                            <option value="O denunciado me contou">O denunciado me contou</option>
+                            <option value="Ouvi por acaso">Ouvi por acaso</option>
+                            <option value="Encontrei um documento ou arquivo acidentalmente<">Encontrei um documento ou arquivo acidentalmente</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group form-control">
+                        <p><strong>Você sabe se algum Diretor, Conselheiro, Gestor, Gerente ou Coordenador, está CIENTE do problema relatado?</strong></p>
+                        <select class="form-control" name="opcao5" id="opcao5">
+                            <option value="">[selecione]</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group form-control">
+                        <p><strong>Você sabe se algum Diretor, Conselheiro, Gerente ou Coordenador está ENVOLVIDO diretamente no fato relatado?</strong></p>
+                        <select class="form-control" name="opcao6" id="opcao6">
+                            <option value="">[selecione]</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group form-control">
+                        <p><strong>Você sabe se algum(ns) Diretor(es), Conselheiro (s), Gerente(s) ou Coordenador(es) tentou(ram) ESCONDER o problema relatado?</strong></p>
+                        <strong>
+                            (Apesar de não se envolver diretamente, algumas pessoas podem propositadamente ter ignorado o problema, ou ter se comprometido a fazer algo, ou ter afirmado que não era um problema, ou ter alterado evidências).
+                        </strong>
+                        <br>
+                        <select class="form-control" name="opcao7" id="opcao7">
+                            <option value="">[selecione]</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group form-control">
+                        <p><strong>O que você quer denunciar?</strong></p>
+                        <p>  <strong>Descreva o mais detalhadamente possível o que aconteceu, indicando o nome(s) da(s) pessoa(s) que está(ão) envolvida(s), bem como quando o fato ocorreu e se ainda continua ocorrendo.</strong></p>
+                        <textarea class="form-control" name="descricao" id="descricao" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group form-control">
+                        <div class="form-group">
+                            <p><strong>Existem testemunhas? Em caso positivo, indique-as.</strong></p>
+                            <input class="form-control" type="text" id="testemunha" name="testemunha">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p><strong>Você sabe se existem evidências sobre o fato? Em caso positivo, indique-as.</strong></p>
+                    <p>(Quais e em que lugar(es) podem ser encontradas evidências sobre o fato denunciado? Existem documentos que comprovam esse fato? 
+                        Em caso positivo, onde podem ser encontrados? Especifique da forma mais detalhada possível. 
+                        Lembre-se: qualquer informação pode ser útil, por mais irrelevante que ela pareça para você. ATENÇÃO: NÃO REMOVA OU TOME CONTATO COM QUALQUER EVIDÊNCIA OU PROVA, POIS A INVESTIGAÇÃO PODE SER PREJUDICADA.)
+                    </p>
+                    <input class="form-control" type="text" id="descricao2" name="descricao2">
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group form-control">
+                        <p><strong>Caso seja possível, indique o valor financeiro envolvido no fato relatado:</strong></p>
+                        <input class="form-control" type="text" id="descricao3" name="descricao3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <p><strong>Ao preencher o formulário, você concorda que a Contato Seguro salve e envie as informações prestadas à empresa/organização contratante de seus serviços, 
+                        possibilitando que medidas sejam tomadas a partir da análise do conteúdo de suas respostas. 
+                        Para mais informações sobre a proteção de dados e os direitos do usuário, acesse este link, ou a Política de Privacidade.</strong>
+                    </p>
+                    <input type="checkbox" id="termo">
+                    <label for="termo">
+                        <p id="descricao-termo">Li e concordo com o termo acima</p>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulario que consome uma api e envia um email -->
+        <!-- <div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="display: none;">CONTATO</h1> -->
+                    <!-- 5d97d060b7558b55054f49d201491a42 -->
+                    <!-- <form action="https://formsubmit.co/3e9f7ef8f00efa45265fc19ff1c8aa42" method="POST" class="meu-form"> -->
+                        <!-- <button id="botaoEnviarEmail">ENVIAR</button> -->
+                        <!-- <div style="display: none;">
+                            <input type="text" name="name" value="Delcleciano" placeholder="Digite seu nome" required>
+                            <input type="email" name="email" value="delclecianoj42@gmail.com" placeholder="Digite seu e-mail" required>
+                            <textarea cols="30" rows="10" name="message" id="message"
+                            placeholder="Digite sua mensagem" required></textarea>
+                        </div>
+                       
+                        
+                        <div class="container mb-3">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-outline-info avancar-denuncia">
+                                        Avançar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/Site-de-Denuncia/finaliza-denuncia.html">
+                        <input type="hidden" name="_subject" value="Novo Contato!">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-md-12" style="display: flex; flex-direction: column;">
+                    <textarea style="display: none;" cols="30" rows="10" name="message" id="message"
+                    placeholder="Digite sua mensagem" required></textarea>
+
+                    <a>
+                        <button class="btn btn-outline-info avancar-denuncia" id="cria-denuncia" onclick="coletarRespostas()">
+                            Avançar
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="formulario-captura-dados" style="display: none;">
+            <div class="container mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group form-control">
+                            <p><strong>Qual a sua relação com a Plasdil?</strong></p>
+                            <p id="opcao_exibicao1"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group form-control">
+                            <p><strong>Qual o tipo de denúncia melhor se enquadra ao fato que você está registrando?</strong></p>
+                            <p id="opcao_exibicao2"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group form-control">
+                            <p><strong>Indique o local onde ocorreu o fato que você está denunciando:</strong></p>
+                            <p id="opcao_exibicao3"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group form-control">
+                            <p><strong>Indique a área/setor onde ocorreu o fato que você está denunciando:</strong></p>
+                            <p id="opcao_exibicao4"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group form-control">
+                            <p><strong>Como tomou conhecimento deste fato/transgressão?</strong></p>
+                            <p id="opcao_exibicao5"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group form-control">
+                            <p><strong>Você sabe se algum Diretor, Conselheiro, Gestor, Gerente ou Coordenador, está CIENTE do problema relatado?</strong></p>
+                            <p id="opcao_exibicao6"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group form-control">
+                            <p><strong>Você sabe se algum Diretor, Conselheiro, Gerente ou Coordenador está ENVOLVIDO diretamente no fato relatado?</strong></p>
+                            <p id="opcao_exibicao7"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group form-control">
+                            <p><strong>Você sabe se algum(ns) Diretor(es), Conselheiro (s), Gerente(s) ou Coordenador(es) tentou(ram) ESCONDER o problema relatado?</strong></p>
+                            <strong>
+                                (Apesar de não se envolver diretamente, algumas pessoas podem propositadamente ter ignorado o problema, ou ter se comprometido a fazer algo, ou ter afirmado que não era um problema, ou ter alterado evidências).
+                            </strong>
+                            <br>
+                            <p id="opcao_exibicao8"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+    
+            <div class="container mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group form-control">
+                            <p><strong>O que você quer denunciar?</strong></p>
+                            <p>  <strong>Descreva o mais detalhadamente possível o que aconteceu, indicando o nome(s) da(s) pessoa(s) que está(ão) envolvida(s), bem como quando o fato ocorreu e se ainda continua ocorrendo.</strong></p>
+                            <textarea class="form-control" id="opcao_exibicao9" cols="30" rows="10" readonly></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group form-control">
+                            <div class="form-group">
+                                <p><strong>Existem testemunhas? Em caso positivo, indique-as.</strong></p>
+                                <p id="opcao_exibicao10"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><strong>Você sabe se existem evidências sobre o fato? Em caso positivo, indique-as.</strong></p>
+                        <p>(Quais e em que lugar(es) podem ser encontradas evidências sobre o fato denunciado? Existem documentos que comprovam esse fato? 
+                            Em caso positivo, onde podem ser encontrados? Especifique da forma mais detalhada possível. 
+                            Lembre-se: qualquer informação pode ser útil, por mais irrelevante que ela pareça para você. ATENÇÃO: NÃO REMOVA OU TOME CONTATO COM QUALQUER EVIDÊNCIA OU PROVA, POIS A INVESTIGAÇÃO PODE SER PREJUDICADA.)
+                        </p>
+                        <p id="opcao_exibicao11"></p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container mb-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group form-control">
+                            <p><strong>Caso seja possível, indique o valor financeiro envolvido no fato relatado:</strong></p>
+                            <p id="opcao_exibicao12"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+
+<!-- <div class="container mb-3">
+<div class="row">
+    <div class="col-md-12">
+        <a>
+            <button class="btn btn-outline-info avancar-denuncia" id="gera-protocolo" onclick="geraProtocolo()">
+                Avançar
+            </button>
+        </a>
+    </div>
+</div>
+</div> -->
+
+<!-- <div class="container mb-3">
+    <div class="row">
+        <div class="col-md-12">
+            <a>
+                <button class="btn btn-outline-info avancar-denuncia" id="gera-protocolo" onclick="coletarOpcaoERedirecionar()">
+                    Avançar
+                </button>
+            </a>
+        </div>
+    </div>
+</div> -->
+<!-- 
+<div>
+    <textarea class="form-control" id="emailContent" rows="15" readonly></textarea>
+</div> -->

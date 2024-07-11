@@ -1,0 +1,233 @@
+body
+{
+    padding-top: 100px;
+}
+
+.header
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    color: #fff;
+    padding: 10px;
+    z-index: 100;
+}
+
+.logo p a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+.menu li a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.logo p a:hover
+{
+    color: blue;
+}
+
+.menu li a:hover
+{
+   /* color: #151D78; */
+   color: blue;
+}
+
+
+.hamburger-container {
+    display: none;
+    position: absolute;
+    top: 10px; /* Coloca o menu no final do container pai */
+    right: 0;
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Estilos para telas menores que 989 pixels */
+@media (max-width: 989px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .hamburger-container {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+        padding: 10px 0;
+    }
+
+    .mobile-menu li {
+        display: block; /* Alterado para exibir os itens verticalmente */
+        margin-bottom: 10px; /* Adicionado espaçamento entre os itens */
+    }
+}
+
+
+.introducao
+{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.criar-protocolo
+{
+    text-align: center;
+}
+
+.sobre
+{
+    background-color: #f5f5f5;
+    padding: 60px;
+    margin-bottom: 20px;
+}
+
+.titulo-sobre
+{
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    color: #263472;
+    font-size: 1.7rem;
+}
+
+.como-funciona
+{
+    background-color: #f5f5f5;
+    padding: 60px;
+    margin-bottom: 20px;
+}
+
+.titulo-etica
+{
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    color: #263472;
+    font-size: 1.7rem;
+}
+
+.alerta-importante
+{
+    background-color: #f5f5f5;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.rodape
+{
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.redes-sociais {
+    font-size: 24px;
+}
+
+.redes-sociais a {
+    margin-right: 15px;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.tabela-protocolo
+{
+    margin-bottom: 80px;
+}
+
+.pesquisa-protocolo
+{
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa-protocolo input {
+    margin-right: 10px; /* Ajuste conforme necessário */
+    width: 50%;
+}
+
+.consulta-protocolo {
+    white-space: nowrap;
+}
+
+
+.bt-faca-denuncia
+{
+    border-radius: 50px;
+    box-sizing: border-box;
+    min-width: 180px;
+    padding: 9px 15px;
+    font-size: 14px!;
+}
+
+
+@media (max-width: 768px) {
+
+    .pesquisa-protocolo {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .consulta-protocolo {
+        white-space: nowrap;
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .pesquisa-protocolo input {
+       width: 100%;
+    }
+}
+
+.icone-paragrafo {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+}
+
+.iconeCopy{
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+
